@@ -31,25 +31,25 @@ public class PatientEventWS {
     public List<Patient> GetListPatient(){
         return new PatientDao().GetListPatient();
     }
-    @WebMethod(operationName = "InsertPatient")
-    public static void InsertPatient(String nomPatient, int age , string occupation , boolean  male , boolean female)
-    {
-        try{ 
-      //lien vers la base de données 
-      Connection connection = DriverManager.getConnection("url","user","password"); 
-  
-      //préparation de l'instruction SQL 
-      String sql = "INSERT INTO Patient VALUES (?, ?)"; 
-      PreparedStatement statement = connection.prepareStatement(sql); 
-  
-      //insertion de l'image 
-      statement.setString(1, nomPatient); 
-      
-  
-    }catch(Exception e){ 
-       //traitement des erreurs SQL, IO, etc. 
-    }finally { 
-       //fermeture de la connexion, du flux, etc. 
-    } 
-}
+//    @WebMethod(operationName = "InsertPatient")
+//    public static void InsertPatient(String nomPatient, int age , string occupation , boolean  male , boolean female)
+//    {
+//        try{ 
+//      //lien vers la base de données 
+//      Connection connection = DriverManager.getConnection("url","user","password"); 
+//  
+//      //préparation de l'instruction SQL 
+//      String sql = "INSERT INTO Patient VALUES (?, ?)"; 
+//      PreparedStatement statement = connection.prepareStatement(sql); 
+//  
+//      //insertion de l'image 
+//      statement.setString(1, nomPatient); 
+//      
+//  
+//    }catch(Exception e){ 
+//       //traitement des erreurs SQL, IO, etc. 
+//    }finally { 
+//       //fermeture de la connexion, du flux, etc. 
+//    } 
+//}
 }

@@ -32,38 +32,38 @@ public class MedecinEventWS {
         return new MedecinDao().findallmedecin();
     }
        
-    @PersistenceContext
-	private EntityManager entityManager;
-
-	public MedecinEventWS() {
-		
-	}
-
-	
-	public void createPatient(Patient patient) {
-		entityManager.persist(patient);
-	}
-
-	
-	public void updatePatient(Patient patient) {
-		try {
-			entityManager.merge(patient);
-		} catch (Exception e) {
-		}
-
-	}
-
-	
-	public void removePatient(Patient patient) {
-		try {
-			entityManager.remove(patient);
-		} catch (Exception e) {
-		}
-	}
-
-	
-	public Patient findPatientById(Long idMedecin) {
-		return entityManager.find(Patient.class, idMedecin);
-	}
+//    @PersistenceContext
+//	private EntityManager entityManager;
+//
+//	public MedecinEventWS() {
+//		
+//	}
+//
+//	
+//	public void createPatient(Patient patient) {
+//		entityManager.persist(patient);
+//	}
+//
+//	
+//	public void updatePatient(Patient patient) {
+//		try {
+//			entityManager.merge(patient);
+//		} catch (Exception e) {
+//		}
+//
+//	}
+//
+//	
+//	public void removePatient(Patient patient) {
+//		try {
+//			entityManager.remove(patient);
+//		} catch (Exception e) {
+//		}
+//	}
+//
+//	
+//	public Patient findPatientById(Long idMedecin) {
+//		return entityManager.find(Patient.class, idMedecin);
+//	}
 
 }
