@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>com.csys.dmi</groupId>
-        <artifactId>dmi</artifactId>
-        <version>1.1-SNAPSHOT</version>
-    </parent>
-    <name>dmi-core</name>
+    <artifactId>dmi</artifactId>
+    <groupId>com.csys.dmi</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
     <groupId>com.csys.dmi</groupId>
     <artifactId>dmi-core</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+
+    <name>dmi-core</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    
     <dependencies>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>eclipselink</artifactId>
-            <version>2.6.1</version>
+            <version>2.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
-            <version>2.6.1</version>
+            <version>2.5.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -36,6 +36,24 @@
             <artifactId>webservices-rt</artifactId>
             <version>2.3</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-app</artifactId>
+            <version>1.11</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20150729</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
@@ -72,28 +90,27 @@
             <version>1.1.1</version>
         </dependency>
 
-
+        <dependency> 
+            <groupId>com.microsoft.sqlserver</groupId> 
+            <artifactId>sqljdbc4</artifactId> 
+            <version>4.0</version>
+        </dependency>
 
     </dependencies>
     <build>
         <plugins>
-   <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>2.3.2</version>
-    <configuration>
-     <source>1.7</source>
-     <target>1.7</target>
-     <compilerArguments>
-      <endorseddirs>${endorsed.dir}</endorseddirs>
-      <proc:none/>
-      <Xlint/>
-      <Xlint:-path/>
-      <verbose />
-     </compilerArguments>
-     <showDeprecation>true</showDeprecation>
-    </configuration>
-   </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.0</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <compilerArguments>
+                        <endorseddirs>${endorsed.dir}</endorseddirs>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -127,11 +144,13 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+             <plugin>
                 <groupId>org.jvnet.jax-ws-commons</groupId>
                 <artifactId>jaxws-maven-plugin</artifactId>
                 <version>2.2</version>
                 <executions>
+                    
+                  
                     <execution>
                         <id>generate-client-wsdl_1</id>
                         <phase>process-classes</phase>
@@ -139,7 +158,7 @@
                             <goal>wsgen</goal>
                         </goals>
                         <configuration>
-                            <sei>com.csys.dmi.service.MedecinEventWS</sei>
+                            <sei>com.csys.dmi.service.ExaminationWS</sei>
                             <genWsdl>true</genWsdl>
                             <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
                             <exclusions>
@@ -150,9 +169,12 @@
                             </exclusions>
                         </configuration>
                     </execution>
+                    
                   
                     
-                   
+                 
+                    
+                    
                     <execution>
                         <id>generate-proxies</id>
                         <phase>process-classes</phase>
@@ -274,4 +296,5 @@
             </plugin-->
         </plugins>
     </reporting>
+
 </project>

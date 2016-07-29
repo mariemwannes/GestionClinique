@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
-  <endpoint implementation="com.csys.dmi.service.PatientEventWS" name="PatientEventWS" url-pattern="/PatientEventWS"/>
-  <endpoint implementation="com.csys.dmi.service.MedecinEventWS" name="MedecinEventWS" url-pattern="/MedecinEventWS"/>
+  <endpoint implementation="com.csys.dmi.service.ExaminationWS" name="ExaminationWS" url-pattern="/ExaminationWS"/>
 </endpoints>
