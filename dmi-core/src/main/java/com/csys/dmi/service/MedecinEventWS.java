@@ -32,7 +32,7 @@ public class MedecinEventWS {
         return new MedecinDao().findallmedecin();
     }
        
-    @PersistenceContext
+  /*  @PersistenceContext
 	private EntityManager entityManager;
 
 	public MedecinEventWS() {
@@ -65,5 +65,5 @@ public class MedecinEventWS {
 	public Patient findPatientById(Long idMedecin) {
 		return entityManager.find(Patient.class, idMedecin);
 	}
-
+*/
 }
