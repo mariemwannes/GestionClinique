@@ -1,0 +1,517 @@
+.modal-title i{
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+#div_serologie .btn-default.active{
+     background-color: #e74c3c;
+    border-color: #c0392b;
+}
+
+/***********************************************/
+#_grid_posologie_prescription .btn,#_grid_temp_posoligie_prescription .btn{
+    margin-left: 30px;
+    padding: 1px 7px;
+}
+
+/*******************************/
+
+#_grid_examen_demande_radio .checkbox i,#_grid_examen_demande_endo .checkbox i{
+    top:0!important
+}
+
+#_grid_evenement .btn {
+    margin-left: 30px;
+    padding: 1px 7px;
+}
+/***************************************************/
+#_grid_examen_demande_labo,#_grid_examen_demande_pharm{
+    height: 250px;
+    overflow-y: scroll;
+}
+#_grid_examen_demande_labo,#_grid_examen_demande_pharm .btn,#_grid_temp_dmnd_labo .btn,#_grid_list_all_demande_dmnd_labo .btn,.label{
+    margin-left: 13px;
+    padding: 1px 0px;
+}
+
+/***************************************************/
+#_grid_examen_demande_pharm{
+    height: 250px;
+    overflow-y: scroll;
+}
+#_grid_temp_dmnd_pharm .btn{
+    margin-left: 30px;
+    padding: 1px 7px;
+}
+
+
+
+/***************************************************/
+#_grid_examen_demande_radio{
+    height: 250px;
+    overflow-y: scroll;
+}
+#_grid_examen_demande_radio .btn,#_grid_temp_dmnd_radio .btn,#_grid_list_demande_dmnd_radio .btn{
+    margin-left: 30px;
+    padding: 1px 7px;
+}
+
+/*****************************************/
+#_grid_examen_demande_endo {
+    height: 250px;
+    overflow-y: scroll;
+}
+#_grid_examen_demande_endo .btn,#_grid_temp_dmnd_endoscopie .btn {
+    margin-left: 30px;
+    padding: 1px 7px;
+}
+/*****************************************/
+#_grid_list_demande_dmnd_bloc .btn,.label{
+    
+    padding: 1px 7px;
+}
+
+.select2-hidden-accessible{
+    display: none;
+}
+
+.myBoxStyle1{
+    height: 100px;
+    overflow: auto!important;
+
+}
+.myBoxStyle2{
+    height: 170px;
+    overflow: auto!important;
+}
+.myBoxStyle3{
+    height: 250px;
+    overflow: auto!important;
+}
+
+.myCaseInitStyle{
+    cursor: pointer;
+}
+
+.myCasePlanStyle{
+    background-color: rgb(84, 101, 113);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    max-width: 0px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 7px 0px 0px 0px!important
+}
+
+.myCaseArretTraitStyle{
+    padding:  3px !important;
+}
+
+.myCaseArretTraitStyle .fa-arrows-v{
+    font-weight: bold;
+    font-size: 28px;
+    color: #a90329;
+
+
+}
+
+
+.myCaseExecuteStyle{
+    padding-left:  1px !important;
+    padding-right:  1px !important;
+    vertical-align: middle!important;
+    font-weight: bold;
+    max-width: 0px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.myCaseTotTextStyle,.myCaseTotalStyle{
+    padding-left:  1px !important;
+    padding-right:  1px !important;
+    vertical-align: middle!important;
+    font-weight: bold;
+    max-width: 0px;
+    background-color: #E7CECE;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+
+.dropdown-menu .fa-trash{
+    margin-right: 5px;
+    font-size: 18px;
+    color:#a65858;
+}
+
+.dropdown-menu .fa-times{
+    margin-right: 5px;
+    font-size: 18px;
+    color: #ac5287;
+}
+
+.dropdown-menu .fa-arrows-v{
+    margin-right: 11px;
+    font-size: 18px;
+    color: #a90329;
+}
+
+
+.myDesignationRea{
+    cursor: pointer;
+    -webkit-user-select: none;
+
+}
+
+.myCase2initStyle{
+    background-color: white;
+}
+
+.myCase2planStyle{
+    background-color: rgb(84, 101, 113);
+}
+
+#_box_form_feuil_rea_tab .btn-default.active, #_box_form_feuil_surv_tab .btn-default.active,#_box_trace_traitements .btn-default.active {
+    color: #fff;
+    background-color: #739e73;
+    border-color: #659265;
+}
+
+
+.scroll-box 
+{
+    width: 80%;
+    height: 1.2em;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-text 
+{
+    position: absolute;
+    white-space: nowrap;
+}
+
+.badge 
+{
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 17px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #999;
+    border-radius: 10px;
+}
+
+
+.myTableStyle, .myTableStyle>tbody>tr>td, .myTableStyle>tbody>tr>th, .myTableStyle>tfoot>tr>td, .myTableStyle>tfoot>tr>th, .myTableStyle>thead>tr>td, .myTableStyle>thead>tr>th {
+    border: 1px solid #A6A6A6;
+}
+.myTableStyle>thead>tr>td, .myTableStyle>thead>tr>th {
+    border-bottom-width: 2px;
+}
+
+.dropdown-menu li{
+    font-weight: bold;
+    margin:2px;
+    font-size: 14px;
+}
+.dropdown-menu li i{
+    font-size: 18px;
+}
+
+.minified .myLabelMenuStyle{
+    padding: 5px;
+    margin-left: -1px;
+}
+.myLabelMenuStyle{
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 6px;
+}
+
+#header .select2-drop-active{
+    font-size: 60px!important;
+}
+
+.myDropDoxnStyle_L{
+    width: 600px !important;
+}
+.myDropDoxnStyle_M{
+    width: 400px !important;
+}
+.myDropDoxnStyle_XS{
+    width: 300px !important;
+}
+
+.myDropDoxnStyle_XXS{
+    width: 250px !important;
+}
+#header .select2-chosen{
+   font-size: 13px; 
+}
+
+.ajax-dropdown2>:first-child {
+    margin: 0 0 3px;
+    padding: 0 0 9px;
+}
+
+.ajax-dropdown2 {
+    position: absolute;
+    display: none;
+    z-index: 905;
+    top: 48px;
+    right: 0px;
+    /*width: 344px;*/
+    width: 280px;
+    height: 575px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(30, 30, 100, .25);
+    -moz-box-shadow: 0 2px 4px rgba(30, 30, 100, .25);
+    box-shadow: 0 2px 4px rgba(30, 30, 100, .25);
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #b3b3b3;
+}
+
+.ajax-dropdown2:after, .ajax-dropdown2:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.ajax-dropdown2:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 7px;
+    left: 50%;
+    margin-left: -7px;
+}
+.ajax-dropdown2:before {
+    border-color: rgba(131, 131, 131, 0);
+    border-bottom-color: #838383;
+    border-width: 8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.ajax-dropdown2 .btn-group .btn {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.ajax-dropdown2 .btn-group>:nth-child(2) {
+    border-right-width: 0;
+    border-left-width: 0;
+}
+.ajax-dropdown2 .btn-group>:last-child {
+    border-right-width: 1px!important;
+}
+.ajax-dropdown2 .btn-group .btn:active {
+    top: 0;
+    left: 0;
+}
+.ajax-dropdown2>:last-child {
+    font-size: 13px;
+    display: block;
+    padding: 5px 0;
+    line-height: 22px;
+    font-weight: 400;
+}
+.ajax-dropdown2 .fa-4x.fa-border {
+    border-width: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 46px;
+    text-align: center;
+    color: #D1D1D1;
+    border-color: #D1D1D1;
+}
+.active+.ajax-dropdown2 {
+    -webkit-animation-name: flipInY;
+    -moz-animation-name: flipInY;
+    -o-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-duration: .7s;
+    -moz-animation-duration: .7s;
+    -o-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.ajax-notifications2 .ajax-loading-error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.ajax-notifications2 .ajax-loading-animation {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 70px;
+}
+.ajax-notifications2 {
+    height: 365px;
+    display: block;
+    overflow: auto;
+    margin-right: -10px;
+    margin-left: -10px;
+    border-bottom: 1px solid #CECECE;
+    border-top: 1px solid #CECECE;
+    background: #E9E9E9;
+}
+.ajax-notifications2>.alert.alert-transparent {
+    background-color: transparent;
+    border-color: transparent;
+    color: #757575;
+    margin: 13px 10px;
+}
+.ajax-notifications2>.alert>:first-child {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.notification-body2 *, .notification-body2:after *, .notification-body2:before * {
+    box-sizing: border-box!important;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+}
+.notification-body2 {
+    padding: 0 0 0 3px;
+    margin: 0;
+    list-style: none;
+}
+.notification-body2>li {
+    border-bottom: 1px solid #E9E9E9;
+    position: relative;
+}
+.notification-body2>li>span {
+    background: #fff;
+    display: block;
+    min-height: 25px;
+    overflow: hidden;
+    padding: 8px 10px 13px;
+    white-space: normal;
+}
+.notification-body2>li>span:hover {
+    background: #F0F4F7;
+    color: #667F8F;
+}
+.notification-body2>li a.msg {
+    padding-left: 50px!important;
+}
+.notification-body2>li a, .notification-body2>li a span {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.notification-body2>li a, .notification-body2>li a:hover {
+    text-decoration: none;
+}
+.notification-body2>li:hover .progress {
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 0 0 1px #a7a7a7 inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 0 0 1px #ccc inset;
+    -moz-box-shadow: 0 1px 0 transparent, 0 0 0 1px #fff inset;
+}
+.notification-body2>li:hover .text-muted {
+    color: #333;
+}
+.notification-body2 .from {
+    font-size: 12px;
+    line-height: normal;
+    color: #333;
+    font-weight: 400;
+    margin-right: 60px;
+    margin-bottom: 6px;
+    margin-left: -20px;
+    height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.notification-body2 .unread .from {
+    font-weight: 700;
+}
+.notification-body2 .unread {
+    background: #FFFFE0;
+}
+.notification-body2 time {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: #058dc7;
+}
+.notification-body2 .msg-body, .notification-body2 .subject {
+    font-size: 13px;
+    color: #A0A0A0;
+    max-height: 35px;
+    margin-left: -20px;
+    width: 100%;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+}
+.notification-body2 .subject {
+    font-size: 13px;
+    color: #333;
+    max-height: 500px;
+}
+
+#badge_observation
+{
+    position: absolute;
+    top: 3px;
+    right: 120px;
+    cursor: pointer;
+    background: #0091d9;
+    display: none;
+    font-size: 10px;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 2px 4px 3px;
+    text-align: center;
+    line-height: normal;
+}
+
+#badge_observation2
+{
+    position: absolute;
+    top: -2px;
+    right: 15%;
+    cursor: pointer;
+    background: #0091d9;
+    display: none;
+    font-size: 15px;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 2px 4px 3px;
+    text-align: center;
+    line-height: normal;
+}
+
+.panner:hover{
+    background-color: lightgray;   
+}

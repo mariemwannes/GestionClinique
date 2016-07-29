@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/dmi-core">
+  <ResourceLink global="jdbc/dmi" name="jdbc/dmi" override="false" type="javax.sql.DataSource"/>
+</Context>
